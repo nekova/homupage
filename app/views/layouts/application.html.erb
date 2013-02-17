@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homuhomu</title>
+    <%= stylesheet_link_tag    'application', :media => 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <center>
+        <div class="hero-unit">
+          <h1>homuhomu</h1> 
+          <p><small>I'm nekova.</p></small>            
+          <div class="btn-group">
+            <a class="btn btn-large" <%= link_to 'Link','link',{:disabled => request.fullpath == '/link'} %></a>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-large" <%= link_to 'Make','make',{:disabled => request.fullpath == '/make'} %></a>
+          </div>
+        </center>
+      </div>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>

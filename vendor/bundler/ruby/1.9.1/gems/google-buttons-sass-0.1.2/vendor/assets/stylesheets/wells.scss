@@ -1,0 +1,17 @@
+// WELLS
+// -----
+
+.well {
+  background-color: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  @include border-radius(0);
+  @include box-shadow(none);
+}
+
+// Sizes
+.well-large {
+  @include border-radius(0);
+}
+.well-small {
+  @include border-radius(0);
+}
