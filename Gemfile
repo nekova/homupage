@@ -16,8 +16,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-  gem 'turbolinks'
-#gem 'pjax_rails'
+gem 'turbolinks'
 
 
 # To use ActiveModel has_secure_password
