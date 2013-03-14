@@ -2,9 +2,9 @@ class HomusController < ApplicationController
   def index
   end
   
-  def show
+  def about
   end
-
+  
   def link
   end
   

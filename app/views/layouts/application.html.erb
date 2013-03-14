@@ -10,13 +10,13 @@
     <div class="container-fluid">
       <center>
         <div class="hero-unit">
-          <h1>The Hitchhiker's Guide to the nekova.</h1> 
-          <p>I'm <%= link_to 'nekova', '/' %>.</p>            
+          <h1>pre-Nekova.org</h1> 
+          <p>I'm <%= link_to 'nekova', about_path %>.</p>            
           <div class="btn-group">
-            <a class="btn btn-large" <%= link_to 'Link','link',{:disabled => request.fullpath == '/link'} %></a>
+            <a class="btn btn-large" <%= link_to 'Link', link_path,{:disabled => request.fullpath == link_path} %></a>
           </div>
           <div class="btn-group">
-            <a class="btn btn-large" <%= link_to 'Make','make',{:disabled => request.fullpath == '/make'} %></a>
+            <a class="btn btn-large" <%= link_to 'Make', make_path,{:disabled => request.fullpath == make_path} %></a>
           </div>
         </center>
       </div>
