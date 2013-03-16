@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails'
-
+gem 'jekyll'
 gem 'jquery-rails'
 gem 'sqlite3', :group => [:development, :test]
 group :production do
